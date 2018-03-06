@@ -4,10 +4,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.github.goxr3plus</groupId>
-    <artifactId>Embededded-JavaFX-Web-Browser-App</artifactId>
+    <artifactId>Embedded-JavaFX-Web-Browser-App</artifactId>
     <version>1.0.0</version>
-    <name>EmbededdedJavaFXWebBrowserApp</name>
-    <description>EmbededdedJavaFXWebBrowserApp</description>
+    <name>EmbeddedJavaFXWebBrowserApp</name>
+    <description>EmbeddedJavaFXWebBrowserApp</description>
 
     <!-- Output to jar format -->
     <packaging>jar</packaging>
@@ -19,7 +19,7 @@
     </properties>
 
     <build>
-        <finalName>EmbededdedJavaFXWebBrowserApp-${project.version}</finalName>
+        <finalName>EmbeddedJavaFXWebBrowserApp-${project.version}</finalName>
         <sourceDirectory>src</sourceDirectory>
         <resources>
             <resource>
@@ -71,7 +71,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <mainClass>main.java.com.goxr3plus.exampleapp.application.Main</mainClass>
-                            <classpathPrefix>EmbededdedJavaFXWebBrowserApp_lib/</classpathPrefix>
+                            <classpathPrefix>EmbeddedJavaFXWebBrowserApp_lib/</classpathPrefix>
                         </manifest>
                     </archive>
                 </configuration>
@@ -92,7 +92,7 @@
                         <configuration>
                             <!-- exclude junit, we need runtime dependency only -->
                             <excludeArtifactIds> junit </excludeArtifactIds>
-                            <outputDirectory>${project.build.directory}/EmbededdedJavaFXWebBrowserApp_lib/</outputDirectory>
+                            <outputDirectory>${project.build.directory}/EmbeddedJavaFXWebBrowserApp_lib/</outputDirectory>
                         </configuration>
                     </execution>
                 </executions>
